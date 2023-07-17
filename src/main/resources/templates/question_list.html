@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/tailwind.css"  rel="stylesheet">
+<!--    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">-->
+    <title>-목록</title>
+</head>
+<body class="bg-gray-100">
+<div class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-4">게시판</h1>
+
+    <!-- 게시글 목록 -->
+    <div class="bg-white shadow-md rounded-md p-4 mb-4">
+        <h2 class="text-xl font-bold mb-4">게시글 목록</h2>
+        <ul>
+            <li class="flex items-center mb-2">
+                <span class="bg-blue-500 text-white rounded-full px-2 py-1 text-sm">공지</span>
+                <a href="/posts/1" class="ml-2 text-blue-500 hover:underline">첫 번째 게시글</a>
+            </li>
+            <li class="flex items-center mb-2">
+                <span class="bg-blue-500 text-white rounded-full px-2 py-1 text-sm">일반</span>
+                <a href="/posts/2" class="ml-2 text-blue-500 hover:underline">두 번째 게시글</a>
+            </li>
+
+        </ul>
+    </div>
+    <button th:href="@{/question/create}" class="bg-violet-400 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+        질문등록
+    </button>
+</div>
+
+
+
+
+</body>
+</html>

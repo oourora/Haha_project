@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-highlight {
+  background-color: yellow;
+}
+
+.custom-button {
+  padding: 8px 16px;
+  background-color: #blue;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.custom-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
