@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/tailwind.config.js" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <title>공동템플릿</title>
+</head>
+<body class="bg-gray-100">
+    <nav th:replace="~{navbar :: navbarFragment}"></nav>
+    <!-- 기본 템플릿 안에 삽입될 내용 Start -->
+    <th:block layout:fragment="content"></th:block>
+    <!-- 자바스크립트 Start -->
+    <th:block layout:fragment="script"></th:block>
+
+</body>
+</html>
